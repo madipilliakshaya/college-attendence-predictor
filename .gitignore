@@ -1,0 +1,76 @@
+# ─── Python ────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Virtual environments
+backend/venv/
+backend/.venv/
+venv/
+.venv/
+env/
+
+# Environment files (keep .example, ignore actual secrets)
+backend/.env
+.env
+*.env
+
+# SQLite database (dev artifact — not committed)
+*.db
+*.sqlite
+*.sqlite3
+
+# Trained ML model artifacts (large binary — not committed to git)
+backend/app/data/trained_attendance_model.joblib
+backend/app/data/synthetic_attendance_dataset.csv
+
+# ML evaluation report is small and useful to keep
+# backend/app/data/ml_evaluation_report.json  <-- intentionally NOT ignored
+
+# Pytest cache
+.pytest_cache/
+backend/.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+
+# ─── Node / Next.js ────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.vercel/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.pnpm-debug.log*
+.npm
+
+# ─── OS / Editor ───────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.suo
+*.user
+
+# ─── Logs ──────────────────────────────────────────────────
+*.log
+logs/

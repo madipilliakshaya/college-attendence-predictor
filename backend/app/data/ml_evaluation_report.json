@@ -1,0 +1,56 @@
+{
+  "dataset_info": {
+    "total_samples": 1200,
+    "train_samples": 960,
+    "test_samples": 240,
+    "origin": "Synthetic Dataset (Explicitly Labeled) simulating 15-week college semester",
+    "features": [
+      "current_attendance_pct",
+      "classes_conducted",
+      "classes_attended",
+      "classes_absent",
+      "recent_attendance_pct",
+      "trend_delta",
+      "consecutive_absences",
+      "remaining_classes",
+      "semester_progress",
+      "subject_credits",
+      "is_lab"
+    ]
+  },
+  "regression_model_comparison": {
+    "Ridge_Regression_Baseline": {
+      "MAE": 4.254,
+      "RMSE": 5.471,
+      "R2": 0.7871
+    },
+    "Random_Forest_Regressor": {
+      "MAE": 4.643,
+      "RMSE": 6.374,
+      "R2": 0.711
+    },
+    "Gradient_Boosting_Regressor": {
+      "MAE": 4.681,
+      "RMSE": 6.301,
+      "R2": 0.7176
+    }
+  },
+  "best_regression_model": "Ridge_Regression_Baseline",
+  "risk_classification_metrics": {
+    "Accuracy": 0.8708,
+    "Precision": 0.8824,
+    "Recall": 0.7229,
+    "F1_Score": 0.7947,
+    "Confusion_Matrix": [
+      [
+        149,
+        8
+      ],
+      [
+        23,
+        60
+      ]
+    ]
+  },
+  "feature_importances": {}
+}
